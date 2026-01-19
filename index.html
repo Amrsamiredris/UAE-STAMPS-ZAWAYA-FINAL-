@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamps For Tomorrow | UAE Stamp Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-blue: #5596C4;
+            --brand-green: #709E7B;
+            --brand-purple: #B68EB8;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafbfc;
+        }
+        .stamp-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+        .wavy-border {
+            mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 10 Q 12.5 0 25 10 T 50 10 T 75 10 T 100 10 V 20 H 0 Z" fill="black"/></svg>');
+            mask-repeat: repeat-x;
+            mask-size: 40px 10px;
+        }
+        .perforated-edge {
+            mask-image: radial-gradient(circle at 12px 12px, transparent 8px, black 8.5px);
+            mask-size: 24px 24px;
+        }
+        .bg-brand-blue { background-color: var(--brand-blue); }
+        .bg-brand-green { background-color: var(--brand-green); }
+        .bg-brand-purple { background-color: var(--brand-purple); }
+        .text-brand-blue { color: var(--brand-blue); }
+        .text-brand-green { color: var(--brand-green); }
+        .text-brand-purple { color: var(--brand-purple); }
+        .border-brand-blue { border-color: var(--brand-blue); }
+        .border-brand-green { border-color: var(--brand-green); }
+        .border-brand-purple { border-color: var(--brand-purple); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "qrcode": "https://esm.sh/qrcode@1.5.3"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
